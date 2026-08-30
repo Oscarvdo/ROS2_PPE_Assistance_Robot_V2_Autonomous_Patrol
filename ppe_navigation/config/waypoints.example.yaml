@@ -1,0 +1,23 @@
+# Replace these example poses after creating the real plant map in RViz.
+# Coordinates are meters in the map frame; yaw is radians.
+waypoints:
+  - name: charging_station
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+    dwell_seconds: 5.0
+  - name: production_line_1
+    x: 2.0
+    y: 0.0
+    yaw: 0.0
+    dwell_seconds: 10.0
+  - name: assembly_room
+    x: 2.0
+    y: 2.0
+    yaw: 1.5708
+    dwell_seconds: 10.0
+  - name: warehouse_aisle
+    x: 0.0
+    y: 2.0
+    yaw: 3.1416
+    dwell_seconds: 10.0

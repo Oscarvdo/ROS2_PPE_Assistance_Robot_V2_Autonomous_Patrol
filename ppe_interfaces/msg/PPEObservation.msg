@@ -1,0 +1,15 @@
+std_msgs/Header header
+string track_id
+float32 person_confidence
+int32 person_xmin
+int32 person_ymin
+int32 person_xmax
+int32 person_ymax
+bool helmet_detected
+bool helmet_status_known
+float32 helmet_confidence
+bool vest_detected
+bool vest_status_known
+float32 vest_confidence
+string compliance_state
+string source

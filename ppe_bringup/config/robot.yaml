@@ -1,0 +1,22 @@
+ppe_perception:
+  ros__parameters:
+    camera_topic: /camera/image_raw
+    detector_mode: yolo
+    weights_path: /opt/ppe/models/ppe_yolo.pt
+    source: yahboom_camera
+    confidence_threshold: 0.60
+ppe_decision:
+  ros__parameters:
+    violation_confirmation_frames: 8
+    violation_confirmation_seconds: 2.0
+    alert_cooldown_seconds: 30.0
+ppe_alert:
+  ros__parameters:
+    enable_voice: true
+ppe_logger:
+  ros__parameters:
+    database_path: /var/lib/ppe_robot/ppe_events.db
+ppe_navigation_guard:
+  ros__parameters:
+    dry_run: true
+    cmd_vel_topic: /cmd_vel

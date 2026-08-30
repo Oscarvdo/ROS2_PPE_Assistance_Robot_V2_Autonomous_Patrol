@@ -1,0 +1,11 @@
+std_msgs/Header header
+string event_id
+string track_id
+string violation_type
+string state
+string alert_message
+float32 person_confidence
+float32 helmet_confidence
+float32 vest_confidence
+string source
+string metadata_json

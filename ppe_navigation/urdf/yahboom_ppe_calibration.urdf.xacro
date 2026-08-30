@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="yahboom_ppe_calibration">
+  <!-- Calibration template only. Measure the assembled robot and prefer the vendor URDF when available. -->
+  <xacro:arg name="base_length" default="0.36"/>
+  <xacro:arg name="base_width" default="0.30"/>
+  <xacro:arg name="laser_x" default="0.0"/>
+  <xacro:arg name="laser_z" default="0.22"/>
+  <link name="base_footprint"/>
+  <link name="base_link">
+    <visual><geometry><box size="$(arg base_length) $(arg base_width) 0.12"/></geometry></visual>
+    <collision><geometry><box size="$(arg base_length) $(arg base_width) 0.12"/></geometry></collision>
+  </link>
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <parent link="base_footprint"/><child link="base_link"/><origin xyz="0 0 0.06" rpy="0 0 0"/>
+  </joint>
+  <link name="laser_frame"/>
+  <joint name="base_to_laser" type="fixed">
+    <parent link="base_link"/><child link="laser_frame"/>
+    <origin xyz="$(arg laser_x) 0 $(arg laser_z)" rpy="0 0 0"/>
+  </joint>
+  <link name="camera_link"/>
+  <joint name="base_to_camera" type="fixed">
+    <parent link="base_link"/><child link="camera_link"/><origin xyz="0.10 0 0.24" rpy="0 0 0"/>
+  </joint>
+</robot>

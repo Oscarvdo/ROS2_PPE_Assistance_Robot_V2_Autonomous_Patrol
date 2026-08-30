@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<package format="3"><name>ppe_logger</name><version>0.1.0</version><description>PPE event storage.</description><maintainer email="osckar.vdo@gmail.com">Oscar I. Valenzuela</maintainer><license>Apache-2.0</license><buildtool_depend>ament_python</buildtool_depend><depend>rclpy</depend><depend>ppe_interfaces</depend><depend>ppe_decision</depend><exec_depend>python3-opencv</exec_depend><export><build_type>ament_python</build_type></export></package>

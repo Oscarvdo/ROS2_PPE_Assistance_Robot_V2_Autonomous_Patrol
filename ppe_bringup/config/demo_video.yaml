@@ -1,0 +1,12 @@
+source:
+  type: video
+  video_path: data/demo.mp4
+  loop: false
+detector:
+  mode: yolo
+  weights_path: models/ppe_yolo.pt
+  confidence_threshold: 0.50
+safety:
+  dry_run: true
+  enable_voice: false
+  enable_evidence_capture: true
