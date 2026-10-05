@@ -1,6 +1,6 @@
 # ROS 2 PPE Assistance Robot V2
 
-## Autonomous Mapping and PPE Patrol
+##Autonomous Mapping and PPE Patrol
 
 Research prototype for mapping a manufacturing facility, localizing in a saved map, patrolling approved waypoints, detecting missing helmets and safety vests, issuing offline voice alerts, and recording auditable events. The target platform is a Yahboom MicroROS-Pi5 mobile robot running ROS 2 Humble.
 
